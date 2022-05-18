@@ -11,7 +11,9 @@ const SearchContainer = styled.View`
 
 const RestaurantList = styled(FlatList).attrs({
   contentContainerStyle: {
-    padding: 16,
+    paddingLeft: 16,
+    paddingBottom: 16,
+    paddingRight: 16,
   },
 })``;
 
