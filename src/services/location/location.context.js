@@ -1,5 +1,4 @@
-import React, { useState, createContext } from "react";
-import { useEffect } from "react/cjs/react.production.min";
+import React, { useState, createContext, useEffect } from "react";
 import { locationRequest, locationTransform } from "./location.service";
 
 export const LocationContext = createContext();
