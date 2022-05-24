@@ -3,7 +3,7 @@ import { FlatList, TouchableOpacity } from "react-native";
 import { ActivityIndicator } from "react-native-paper";
 import styled from "styled-components/native";
 import { Spacer } from "../../../components/spacer/spacer.component";
-import { RestaurantInfoCard } from "../components/restaurant-info-card.components";
+import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import { SafeArea } from "../../../components/utility/safe-are.component";
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 import { Search } from "../components/search.component";
