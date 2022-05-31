@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components/native";
 import WebView from "react-native-webview";
-import { Text } from "../topography/text.component";
 import { Platform } from "react-native";
+import { Text } from "../topography/text.component";
 
 const CompactImage = styled.Image`
   border-radius: 10px;
@@ -10,7 +10,7 @@ const CompactImage = styled.Image`
   height: 100px;
 `;
 
-const CompactWebView = styled(WebView)`
+const CompactWebview = styled(WebView)`
   border-radius: 10px;
   width: 120px;
   height: 100px;
@@ -24,12 +24,13 @@ const Item = styled.View`
 
 const isAndroid = Platform.OS === "android";
 
-export const CompactRestaurantinfo = ({ restaurant }) => {
-  const Image = isAndroid ? CompactWebView : CompactImage;
+export const CompactRestaurantInfo = ({ restaurant }) => {
+  const Image = isAndroid ? CompactWebview : CompactImage;
+
   return (
     <Item>
       <Image source={{ uri: restaurant.photos[0] }} />
-      <Text center variation="caption" numberOfLines={3}>
+      <Text center variant="caption" numberOfLines={3}>
         {restaurant.name}
       </Text>
     </Item>
