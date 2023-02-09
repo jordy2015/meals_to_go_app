@@ -8,6 +8,7 @@ import {
   AuthButton,
   AuthInput,
   Title,
+  ErrorContainer,
 } from "../components/account.styles";
 import { Text } from "../../../components/topography/text.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
